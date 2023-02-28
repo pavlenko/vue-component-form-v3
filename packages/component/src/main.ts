@@ -1,6 +1,7 @@
 import type {Plugin} from 'vue'
 
 import * as componentsDefault from "./components";
+import * as componentsBootstrap3 from "./components/bootstrap3";
 import * as componentsBootstrap4 from "./components/bootstrap4";
 
 export enum VFormPluginTheme {
@@ -20,7 +21,7 @@ export const VFormPlugin: Plugin = {
 
         let components;
         if (VFormPluginTheme.BOOTSTRAP_3 === options.theme) {
-            components = componentsDefault;
+            components = componentsBootstrap3;
         } else if (VFormPluginTheme.BOOTSTRAP_4 === options.theme) {
             components = componentsBootstrap4;
         } else if (VFormPluginTheme.BOOTSTRAP_5 === options.theme) {

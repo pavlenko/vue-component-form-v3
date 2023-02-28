@@ -1,6 +1,6 @@
 <template>
     <div :class="{'form-group': true, 'has-success': _length === 0, 'has-error': _length > 0}">
-        <label v-html="label" />
+        <label class="control-label" v-html="label" />
         <slot />
     </div>
 </template>

@@ -1,4 +1,4 @@
-import 'bootstrap-4/scss/bootstrap.scss'
+import 'bootstrap-3/less/bootstrap.less'
 
 import {createApp} from 'vue'
 import {VFormPlugin, VFormPluginOptions, VFormPluginTheme} from "@pe/vue-component-form-v3/src/main";
