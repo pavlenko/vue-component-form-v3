@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import VFormGroup from "../VFormGroup.vue";
+import VFormGroup from "../default/VFormGroup.vue";
 export default defineComponent({
     name: "VFormGroup",
     extends: VFormGroup

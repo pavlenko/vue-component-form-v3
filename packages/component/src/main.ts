@@ -1,6 +1,6 @@
 import type {Plugin} from 'vue'
 
-import * as componentsDefault from "./components";
+import * as componentsDefault from "./components/default";
 import * as componentsBootstrap3 from "./components/bootstrap3";
 import * as componentsBootstrap4 from "./components/bootstrap4";
 

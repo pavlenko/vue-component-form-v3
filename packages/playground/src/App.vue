@@ -3,7 +3,9 @@
         Hello World
         <Test></Test>
         <Test2></Test2>
-        <VFormGroup label="group">group</VFormGroup>
+        <VFormGroup label="group">
+            <VFormInput />
+        </VFormGroup>
     </div>
 </template>
 
