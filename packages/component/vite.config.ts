@@ -6,11 +6,11 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   build: {
     lib: {
-      name: 'PEModal',
+      name: 'VForm',
       entry: path.resolve(__dirname, 'src/main.ts'),
       formats: ['es', 'umd', 'cjs'],
       fileName: (format) => {
-        return 'es' !== format ? `PEModal.${format}.js` : `PEModal.esm.js`
+        return 'es' !== format ? `VForm.${format}.js` : `VForm.esm.js`
       },
     },
     minify: false,

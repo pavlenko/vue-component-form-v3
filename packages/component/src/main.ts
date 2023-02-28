@@ -2,9 +2,13 @@ import type {Plugin} from 'vue'
 //import PEModal from './components/PEModal.vue';
 //import PEModalContainer from './components/PEModalContainer.vue';
 
-export const PEModalPlugin: Plugin = {
+import * as  VFormInput from "./components";
+//import {VFormInput} from "./components";
+
+export const VFormPlugin: Plugin = {
     install(app) {
         //TODO components
+        console.log(VFormInput);
         //app.component('PEModal', PEModal);
         //app.component('PEModalContainer', PEModalContainer);
     },
