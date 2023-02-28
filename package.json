@@ -1,0 +1,15 @@
+{
+  "name": "@pe/vue-component-modal-root",
+  "description": "TODO are this need",
+  "private": true,
+  "engines": {
+    "node": ">=16.5.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "serve": "npm run serve -w packages/playground"
+  }
+}
