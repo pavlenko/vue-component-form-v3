@@ -1,12 +1,32 @@
 import type {Plugin} from 'vue'
-//import PEModal from './components/PEModal.vue';
-//import PEModalContainer from './components/PEModalContainer.vue';
 
-import * as components from "./components";
-//import {VFormInput} from "./components";
+import * as componentsDefault from "./components";
+import * as componentsBootstrap4 from "./components/bootstrap4";
+
+export enum VFormPluginTheme {
+    DEFAULT,
+    BOOTSTRAP_3,
+    BOOTSTRAP_4,
+    BOOTSTRAP_5
+}
+
+export interface VFormPluginOptions {
+    theme: VFormPluginTheme
+}
 
 export const VFormPlugin: Plugin = {
-    install(app) {
+    install(app, options: VFormPluginOptions) {
+        let components;
+        if (VFormPluginTheme.BOOTSTRAP_3 === options.theme) {
+            components = componentsDefault;
+        } else if (VFormPluginTheme.BOOTSTRAP_4 === options.theme) {
+            components = componentsBootstrap4;
+        } else if (VFormPluginTheme.BOOTSTRAP_5 === options.theme) {
+            components = componentsDefault;
+        } else {
+            components = componentsDefault;
+        }
+
         //TODO components
         console.log(Object.keys(components));
 
