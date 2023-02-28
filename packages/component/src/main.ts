@@ -11,11 +11,13 @@ export enum VFormPluginTheme {
 }
 
 export interface VFormPluginOptions {
-    theme: VFormPluginTheme
+    theme?: VFormPluginTheme
 }
 
 export const VFormPlugin: Plugin = {
     install(app, options: VFormPluginOptions) {
+        options = options || <VFormPluginOptions>{};
+
         let components;
         if (VFormPluginTheme.BOOTSTRAP_3 === options.theme) {
             components = componentsDefault;
