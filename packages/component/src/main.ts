@@ -30,14 +30,11 @@ export const VFormPlugin: Plugin = {
             components = componentsDefault;
         }
 
-        //TODO components
-        console.log(Object.keys(components));
+        console.log(components);
 
         Object.entries(components).forEach(([key, value], index) => {
             app.component(key, value);
         });
-        //app.component('PEModal', PEModal);
-        //app.component('PEModalContainer', PEModalContainer);
     },
 }
 
